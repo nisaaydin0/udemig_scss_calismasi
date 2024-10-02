@@ -1,0 +1,37 @@
+.education-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
+    align-items: center;
+    text-align: center;
+    gap:20px;
+    h4{
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0,5s ease;
+
+        &:hover{
+            color: $mainColor;
+        }
+}
+
+}
+
+
+.row-img{
+    overflow: hidden;
+    width: 100%;
+    width: 100%;
+    margin:0 auto;
+    img{
+        width: 100%;
+        display: block;
+        transition: all 0.7s;
+        cursor: pointer;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        &:hover{
+            transform:scale(1.2) ;
+            }
+}
+}

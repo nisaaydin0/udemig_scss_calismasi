@@ -1,0 +1,73 @@
+.center-text{
+    text-align: center;
+    h2{
+        font-size: $h2Font;
+        font-weight: 800;
+    }
+
+}
+
+
+
+.top-educations-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    .box{
+        position: relative;
+        margin: 20px 0;
+    }
+    img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        filter: brightness(70%);
+        border-radius: 10px;
+        transition: all 0.5s;
+        &:hover{
+            transform: scale(1.04);
+        }
+    }
+    h3{
+        position: absolute;
+        left: 25px;
+        bottom: 85px;
+        font-weight: 500;
+        i{
+            color: orange;
+        }
+    }
+    h4{
+        position: absolute;
+        bottom: 55px;
+        font-size: 18px;
+        left: 25px;
+        font-weight: 500;
+        i{
+            color: orange;
+            margin-right: 6px;
+        }
+    }
+    h5{
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        font-size: 18px;
+        font-weight: 500;
+        i{
+            color: orange;
+            margin-right: 13px;
+        }
+    }
+
+
+}
+
+
+.center-btn{
+    text-align: center;
+    margin-top: 64px;
+    .btn{
+        transition: all 0.5s;
+
+}
+}

@@ -1,0 +1,91 @@
+//diger scss dosyalarini import edelim
+@import "./header";
+@import "./main";
+@import "./educations.scss";
+@import "./aboutUs";
+@import "./topEducations";
+@import "./contactUs";
+@import "./footer";
+//google fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+//ortak yapilari sifirladik
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border:none;
+    outline: none;
+    scroll-behavior: smooth; /*  sayfa gecislerini yavaslatir */
+    
+}
+
+//renk ve fontlar tanimladik
+$textColor:#fff;
+$bgColor:#000;
+$mainColor:#ffa343;
+
+$h1Font:6rem;
+$h2Font:3rem;
+$pFont:1rem;
+
+
+body{
+    color: $textColor;
+    background-color: $bgColor;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.btn{
+    display: inline-block;
+    padding:13px 40px;
+    background-color: $mainColor;
+    border-radius: 5px;
+    color:$bgColor;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    &:hover{
+        transform: translate(10px);
+        border:2px solid $textColor;
+        background: transparent;
+        }
+
+}
+
+
+
+@media(max-width:1220px){
+    .navbar li{
+        display: none;
+    }
+    .home{
+        .home-text{
+            h5{
+                font-size: 16px;
+            }
+            h1{
+                font-size: 38px;
+            }
+            p{
+                font-size: 16px;
+            }
+            .btn{
+                padding: 8px 15px;
+                font-size: 16px;
+                transition: all 0.5s;
+
+            }
+        }
+    }
+
+    .about-us{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
